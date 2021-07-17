@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800" prefWidth="803.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+      <Label fx:id="lblDisplay" layoutX="189.0" layoutY="14.0" text="Bold">
+      <font>
+         <Font size="43.0" />
+      </font></Label>
+   <GridPane fx:id="gdpPlayGrid" gridLinesVisible="true" layoutX="25.0" layoutY="119.0" prefHeight="500.0" prefWidth="475.0" visible="false">
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.99998474121094" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.99998474121094" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.99998474121094" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.99998474121094" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+   </GridPane>
+   <Label fx:id="lblTurn" alignment="CENTER" layoutX="635.0" layoutY="215.0" prefHeight="17.0" prefWidth="167.0" text="Turn:" visible="false" />
+   <Button fx:id="btnStart" layoutX="212.0" layoutY="78.0" mnemonicParsing="false" onAction="#start" text="Start" />
+   <Label fx:id="lblResult" alignment="CENTER" layoutX="630.0" layoutY="279.0" prefHeight="17.0" prefWidth="167.0" text="Result:" visible="false" />
+   <Button fx:id="checkButton" layoutX="705.0" layoutY="103.0" mnemonicParsing="false" onAction="#check" text="End Turn" visible="false" />
+   <Label fx:id="player1" layoutX="92.0" layoutY="650.0" text="Player 1: 0" visible="false" />
+   <Label fx:id="player2" layoutX="92.0" layoutY="679.0" text="Player 2: 0" visible="false" />
+   <Label fx:id="player3" layoutX="92.0" layoutY="704.0" text="Player 3: 0" visible="false" />
+   <Label fx:id="player4" layoutX="92.0" layoutY="728.0" text="Player 4: 0" visible="false" />
+   <Button fx:id="resetButton" layoutX="705.0" layoutY="735.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+   <ChoiceBox fx:id="playerChoice" layoutX="157.0" layoutY="116.0" prefWidth="150.0" visible="false" />
+   <Button fx:id="selectPlayers" layoutX="325.0" layoutY="116.0" mnemonicParsing="false" onAction="#decidePlayer" text="Select" visible="false" />
+   <ListView fx:id="scoreView" layoutX="592.0" layoutY="300.0" prefHeight="200.0" prefWidth="200.0" visible="false" />
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
